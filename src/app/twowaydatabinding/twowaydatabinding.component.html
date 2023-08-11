@@ -1,0 +1,36 @@
+<input type="text" [(ngModel)]="email">
+
+{{email}}
+<br>
+
+///////////////
+<input type="checkbox" name="" id="" [(ngModel)]="isChecked">
+
+checked:{{isChecked}}
+
+
+<br>
+
+////////////
+<input type="radio" name="" id="" [(ngModel)]="gender" value="Male"> Male
+<input type="radio" name="" id="" [(ngModel)]="gender" value="Female"> Female
+
+checked:{{gender}}
+
+
+<!-- slider and range iputes  -->
+<input type="range" [(ngModel)]="sliderVal">
+
+{{sliderVal}}
+
+
+<h1>Selcet dropdown</h1>
+<select name="" id="" [(ngModel)]="tech">
+    <option value="angular">Angular</option>
+    <option value="react">React</option>
+    <option value="vue">Vue</option>
+    <option value="javascript">Javascript</option>
+</select>
+
+
+{{tech}}

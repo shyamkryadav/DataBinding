@@ -1,0 +1,32 @@
+<br><br>
+1>Input Fields
+<input type="text" #inpVal title="This is title"> <br>
+<button (click)="getValue(inpVal)" >Submit</button>
+
+<br>
+value:-{{value}}
+
+
+2. Get the CheckBox Value 
+<input type="checkbox" #chkVal > 
+<br>
+<button (click)="getChkValue(chkVal)">Submit</button>
+
+
+3. Radio Button <br>
+
+<input type="radio" name="gender" value="male" #m>Male <br>
+<input type="radio" name="gender" value="female" #f>Female <br>
+<button (click)="getRadioVal(m.checked ? m.value :f.value)">Submit</button>
+
+<br>
+<br>
+<!-- 4. Select Drop Down  -->
+<select #mySelect > 
+    <option value="Angular">Angular</option>
+    <option value="React">React</option>
+    <option value="vue">vue</option>
+    <option value="js">js</option>
+</select>
+
+<button (click)="getSelectValue(mySelect)">Submit</button>

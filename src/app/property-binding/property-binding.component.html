@@ -1,0 +1,38 @@
+<h1>Propery Binding []</h1>
+
+<img [src]="myImg" [alt]="dynValue">
+<br>
+interpolation
+<img src={{myImg}} [alt]="dynValue">
+
+
+<br>
+imput 
+
+<input type="text" [value]="dynValue">
+<br>
+<br>
+FOR INTERPOLATIN
+<button disabled={{inStock}}> isvalid</button>
+
+<br>
+<br>
+
+FOR Property Binding
+<button [disabled]="!inStock"> isvalid</button>
+ <br>
+ <br>
+product items 
+
+<button [disabled]="!product.item1"> isvalid</button>
+<button [disabled]="!product.item2"> have</button>
+<button [disabled]="!product.item3"> isvalid</button>
+<button [disabled]="!product.item4"> isvalid</button>
+
+
+
+<br><br>
+
+bind-title="dynValue"
+
+<div [attr.aria-label]="dynValue" bind-title="dynValue">Watch</div>

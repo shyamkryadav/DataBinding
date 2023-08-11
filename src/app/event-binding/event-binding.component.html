@@ -1,0 +1,61 @@
+Event Binding
+<br>
+<button (click)="clickMethod()">+ Count</button>
+<br>
+{{count}}
+
+
+<br><br><br>
+2.Pass data to event 
+<br>
+<br>
+<button (click)="changeVal('Sundar' )">Change Value</button>
+
+<br>
+<br>
+Value:{{value}}
+
+
+<h1>$event</h1>
+<br>
+<input type="text" (input)="ImpChange($event)" placeholder="Enter Your Name">
+
+value2:{{value2}}
+
+
+
+<br><br>
+
+3.Change (Select )
+<br>
+<select (change)="onSelectChange($event)" >
+    <option value="angular">Angular</option>
+    <option value="react">React</option>
+    <option value="vue">Vue</option>
+    <option value="js">Js</option>
+</select>
+
+value3:{{value3}}
+
+
+<h1>Scorll Event</h1>
+
+<div style="height: 100px; overflow-y: scroll; background: red;" (scroll)="onScroll($event)">
+<div>1</div>
+<div>2</div>
+<div>3</div>
+<div>4</div>
+<div>5</div>
+<div>6</div>
+<div>7</div>
+<div>8</div>
+<div>9</div>
+<div>10</div>
+<div>11</div>
+<div>12</div>
+<div>13</div>
+<div>14</div>
+<div>15</div>
+<div>16</div>
+<div>17</div>
+</div>
